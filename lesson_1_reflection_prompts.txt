@@ -1,0 +1,28 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    I could see what was deleted and added. Reading the Terminal will take some getting used to, but I can see how useful it will be as I deal with bigger and bigger files.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    I would be able to revert to any previous version of the file instead of having to retype each line from an old version. I could also copy lines from several old versions if necessary, and incorporate them into the current version.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual commit pro: You decide what constitutes a logical change in the file, and you should know because you're the developer. Con: You might forget to commit a logical change until you've finished another, and then your commit will be too big. Automatic commit pro: Better safe than sorry, since everything is saved no matter what. Con: You might have to spend time interpreting the change log because the commits won't come with explanatory messages.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because version-control systems like Git are used in web development, where we're always working with interrelated files - such as "index.html" and "stylesheet.css," for example. Google Docs and similar systems are used mostly for word-processing files, which are not usually interlinked.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Git log lets you view the change log, which includes each commit author, time and message. Git diff lets you compare two different files that you identify from the change log.
+
+How might using version control make you more confident to make changes that could break something?
+
+    If a change is big enough that it could break something, it will have been logged as a commit. Using Git for version control will allow me to find that commit and, if necessary, revert the file to an earlier state.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    It took me a while to get my workspace set up because I couldn't see where the subl command was, and the course instructions didn't specify where to look for it. When I did find it and created the alias, the command wouldn't execute and Sublime wouldn't open. After Googling and trying out several alternatives, all of which failed, I came back to the course instructions and found that they worked this time - to a certain extent. The subl command opens some files, but this reflection file comes up blank. Apparently, this is a well-known OS X bug. I'm not impressed with the command line so far. I hope Git really does work well on it.
