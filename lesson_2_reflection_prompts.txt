@@ -1,15 +1,27 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+	I don't remember this question being asked in the lesson, and I'm not sure I understand it. I thought initializing was done locally in your working directory, and what it does is create an invisible git file in the directory so you can edit the files in it before committing the edits to the repository.
+
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area allows you to plan what files to add from your working directory to your repository. If I were editing several files that I planned to add to my repository, I might find it helpful to add all the files to the staging area so that the staging area can function as a list. Once I finish editing all the files, I could commit them to the repository all at once.
+	The staging area allows you to plan what files to add from your working directory to your repository. If I were editing several files that I planned to add to my repository, I might find it helpful to add all the files to the staging area so that the staging area can function as a list. Once I finish editing all the files, I could commit them to the repository all at once.
 
 How can you use the staging area to make sure you have one commit per logical change?
 
+	Once you've finished editing a file in your working directory and added it, you can run git diff. This compares the version in your working directory and with the one in the staging area. If they are the same, then you've probably finished one logical change and are ready to commit the modified file to the repository.
+
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Since I'm still learning Javascript, I could experiment with interactivity features on branches without fear of breaking the main code of my project.
 
 How do the diagrams help you visualize the branch structure?
 
+	They show us how commits stack up on top of each other, editing the branch they are on. In collaborative projects, diagrams show where the last common commit was before each collaborator started committing changes to his/her own version of the project.
+
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
+	Merging two branches together allows edits made independently by collaborators to be combined on the project. It also allows a branch containing experimental features to be added to the project. The merge commit is represented as having two parent commits, allowing the checkout of both sets of histories on the original branches.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Manual merge allows you fine-grained control over what to add, delete and combine in the code. However, it takes time to do that much detailed work. Automatic merging is faster as long as there are no conflicts in each branch. However, if there are a lot of conflicts, you might end up doing a manual merge anyway.
