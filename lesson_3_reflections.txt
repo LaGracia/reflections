@@ -1,1 +1,23 @@
 When would you want to create a remote repository rather than keeping all your work local?
+
+	When you are working on a different computer, or with several collaborators who will each have versions of the relevant project files on their own computers.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	Because an automatic system might overwrite your own local version of a file before you are ready to do it yourself. Manual pull allows you to determine for yourself which files you need to update in your working directory.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	A fork exists only on GitHub. It's a clone of one repository into another. You use this when you want to copy someone's files, which he/she has shared on the site, and you want to make changes to them. A clone exists in your local directory. It's a copy of a GitHub repository of files. You edit the files on your computer and then push the changes to the repository. A branch exists on both GitHub and your local directory, and it's a diverging line of edits in a given project. If you create a branch in your local directory, you should push the changes afterwards to GitHub. On the other hand, if you create a branch on the site, you pull the edited files into your local directory to keep it in sync with the latest changes.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	It functions as a backup of the public copy.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+	For me, Git is still so difficult to use because I have to memorize its vocabulary and syntax. Editing files from the command line at this point still seems such a tedious task compared to dragging and dropping into a window or using a graphical interface. But I can see how both Git and GitHub might be easier to collaborate on than, say, email or Dropbox or Google. Collaboration on web development means we're talking about a ton of files containing minute changes that could work or break down anywhere along the timeline of the project. That's like an extreme proofreading sport. Git's commands automate all the necessary processes.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+	When you are one of several developers working on part of a large project or when you are working by yourself but want to experiment with a new feature that might break the main code. I understand why, but not how. Pushing and pulling and merging are simple enough concepts, but the commands don't seem intuitive. The benefit is, of course, that you isolate the experimentation or individual edits until they can be proven stable enough for the main code. But the diagrams attempting to show the relationships and processes of both Git and GitHub are just muddying up the waters for me.
